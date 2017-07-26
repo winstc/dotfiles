@@ -13,3 +13,6 @@ config_files:
 
     - src: config/xbindkeys/xbindkeysrc
       dst: .xbindkeysrc
+    
+    - src: config/zshrc
+      dst: .zshrc
