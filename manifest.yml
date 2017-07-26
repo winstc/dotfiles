@@ -10,3 +10,6 @@ config_files:
 
     - src: X11/xscreensaver
       dst: .xscreensaver
+
+    - src: xbindkeys/xbindkeysrc
+      dst: .xbindkeysrc
