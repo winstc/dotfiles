@@ -23,7 +23,7 @@ bindsym $mod+Return exec xterm
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym Mod1+space exec sh /home/winston/rofi_run.sh
+bindsym Mod1+space exec sh /home/winston/scripts/rofi_run.sh
 
 # show a screenshot menu using rofi
 bindsym Print exec teiler
@@ -214,6 +214,8 @@ bindsym Ctrl+2 exec /home/winston/Gits/wal/wal -i /usr/share/wallpapers/pexels-p
 # start compton
 exec compton
 
+bindsym Mod4+c exec /home/winston/scripts/toggle_compton.sh
+
 # save/restore session
 bindsym $Mod+n exec /home/winston/Gits/i3session/i3session save
 bindsym $Mod+Shift+n exec /home/winston/Gits/i3session/i3session restore 
@@ -224,3 +226,4 @@ bindsym $mod+l exec xscreensaver-command -activate
 # move workspaces between monitors
 bindsym Ctrl+$mod+Left move workspace to output left
 bindsym Ctrl+$mod+Right move workspace to output right
+
