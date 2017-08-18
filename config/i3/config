@@ -117,7 +117,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # bind keys to open often used programs
 bindsym $mod+4 exec spotify
 bindsym $mod+5 exec thunderbird
-bindsym $mod+1 exec google-chrome-stable
+bindsym $mod+1 exec firefox
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
