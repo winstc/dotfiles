@@ -10,7 +10,7 @@ font pango:Menlo for Powerline 9
 floating_modifier $mod
 
 # set default gaps for i3 gaps
-gaps inner 5 
+gaps inner 0 
 
 # add toggle for gaps
 bindsym Mod4+g gaps inner all plus 4
@@ -28,7 +28,7 @@ bindsym Mod1+space exec sh /home/winston/scripts/rofi_run.sh
 # show a screenshot menu using rofi
 bindsym Print exec teiler
 
-new_window 1pixel
+#new_window 1pixel
 smart_borders on
 
 # change focus using Alt+Tab
@@ -164,6 +164,7 @@ assign [class="jetbrains-datagrip"] $ws2
 for_window [class="Spotify"] move to workspace $ws4
 for_window [class="Xmessage"] floating enable, border normal
 for_window [class="net-technicpack-launcher-LauncherMain"] floating enable
+for_window [title="sudo nmtui"] floating enable, border normal
 for_window [title="Youtube-DLG"] floating enable, border normal
 for_window [class="Dolphin"] floating enable, border normal
 
@@ -184,7 +185,7 @@ bar {
         statusline $fg   
 
 		#		   border             background         text
-		focused_workspace  $fg		      $fg             $bg
+		focused_workspace  $fg		      $bg             $fg
 		inactive_workspace $bg		      $bg 		      $fg
 		urgent_workspace   $bg		      $bg		      $red
 	}
