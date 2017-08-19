@@ -16,3 +16,6 @@ config_files:
     
     - src: config/zshrc
       dst: .zshrc
+
+    - src: config/i3blocks/config
+      dst: .config/i3blocks/config
