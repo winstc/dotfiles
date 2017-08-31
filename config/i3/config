@@ -95,6 +95,9 @@ bindsym Mod1+8 workspace 8
 bindsym Mod1+9 workspace 9
 bindsym Mod1+0 workspace 10
 
+workspace $ws5 output HDMI-0
+workspace $ws4 output HDMI-0
+
 # move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace $ws1
 bindsym Mod1+Shift+2 move container to workspace $ws2
@@ -174,7 +177,7 @@ bar {
     
     font pango:Menlo for Powerline 9 
 
-    status_command i3blocks
+    #status_command i3blocks
 
 	strip_workspace_numbers yes
 
@@ -191,7 +194,7 @@ bar {
 	}
 		
 	position top
-   	#status_command /home/winston/Gits/bumblebee-status/bumblebee-status -m amixer disk cpu memory nic time battery -t gruvbox
+   	status_command /home/winston/Gits/bumblebee-status/bumblebee-status -m amixer disk cpu memory nic time battery -t gruvbox
 
     
 }
