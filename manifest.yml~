@@ -1,0 +1,18 @@
+config_files:
+    - src: config/i3/config
+      dst: .config/i3/config
+
+    - src: config/X11/Xresources
+      dst: .Xresources
+
+    - src: config/X11/xsession
+      dst: .xsession
+
+    - src: config/X11/xscreensaver
+      dst: .xscreensaver
+
+    - src: config/xbindkeys/xbindkeysrc
+      dst: .xbindkeysrc
+    
+    - src: config/zshrc
+      dst: .zshrc
